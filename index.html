@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Volvo truck repair services including engines, gearboxes, diagnostics, and differential rebuilds. Mobile truck repair clinic serving all your heavy vehicle needs.">
+    <meta name="keywords" content="truck repair, volvo truck repair, mobile truck repair, engine rebuild, gearbox repair, differential rebuild, truck diagnostics">
+    <title>Samtec Mobile Truck Clinic | Expert Truck Repair Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #1a3a6c;
+            --secondary: #f39c12;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .centered-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            border: 2px solid var(--secondary);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.2);
+            transition: var(--transition);
+            z-index: -1;
+        }
+        
+        .btn:hover:before {
+            left: 100%;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-secondary {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: transparent;
+            color: var(--primary);
+        }
+        
+        .btn-large {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            animation: none;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+        
+        .logo:hover img {
+            transform: rotate(-10deg);
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+            display: block;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--secondary);
+            transition: width 0.3s;
+            border-radius: 2px;
+        }
+        
+        nav ul li a:hover:after,
+        nav ul li a.active:after {
+            width: 100%;
+        }
+        
+        nav ul li a.active {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-btn:hover {
+            color: var(--secondary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.7)), url('https://ik.imagekit.io/rdq6fxdrh/Saved%20Pictures/jairph-P-w61wkh-PQ-unsplash.jpg?updatedAt=1750332104437') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--light);
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            background: var(--primary);
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-icon {
+            background: var(--secondary);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: linear-gradient(to right, var(--light) 50%, var(--primary) 50%);
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+            height: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .about-image:hover {
+            transform: translateY(-5px);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-content {
+            color: white;
+        }
+        
+        .about-content h2 {
+            color: white;
+        }
+        
+        .about-content h2:after {
+            background: var(--secondary);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .stat-box:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .stat-box h3 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            color: var(--secondary);
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 80px 0;
+            background: var(--secondary);
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .cta h2 {
+            color: white;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta h2:after {
+            background: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            position: relative;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column ul li a {
+            color: var(--light);
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+            padding: 5px 0;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+        
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info i {
+            margin-right: 15px;
+            color: var(--secondary);
+            margin-top: 5px;
+            min-width: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        @keyframes fadeInLeft {
+            0% { opacity: 0; transform: translateX(-40px);}
+            100% { opacity: 1; transform: translateX(0);}
+        }
+        @keyframes fadeInRight {
+            0% { opacity: 0; transform: translateX(40px);}
+            100% { opacity: 1; transform: translateX(0);}
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+        .animate-fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) forwards;
+        }
+        .animate-fade-in-left {
+            opacity: 0;
+            animation: fadeInLeft 1s cubic-bezier(.23,1.01,.32,1) forwards;
+        }
+        .animate-fade-in-right {
+            opacity: 0;
+            animation: fadeInRight 1s cubic-bezier(.23,1.01,.32,1) forwards;
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 1s cubic-bezier(.23,1.01,.32,1) forwards;
+        }
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .about {
+                background: var(--primary);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px 0;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+                text-align: center;
+                width: 100%;
+            }
+            
+            nav ul li a {
+                padding: 10px;
+                display: block;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                height: auto;
+                padding: 100px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services, .about, .cta {
+                padding: 60px 0;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text {
+                font-size: 1.2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2764471442" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header fade-in>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://ik.imagekit.io/rdq6fxdrh/Saved%20Pictures/_Pngtree_gear%20logo%20design%20and%20truck_4777334.png" alt="S" style="height:60px; width:auto; max-width:120px;" />
+                <div class="logo-text">
+                    SAMTEC
+                    <span>TRUCK CLINIC</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="tel:+2764471442" class="btn">Call Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero animate-fade-in-up" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Engine, Gearbox, and Differential Services</h1>
+                <p>Specializing in Volvo trucks with comprehensive services including engine rebuilds, gearbox repairs, diagnostics, and differential rebuilds. We come to you for maximum convenience.</p>
+                <div class="hero-btns">     
+                    <a href="tel:+2764471442" class="btn">Call Now: 064 471 442</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Specialized Services</h2>
+                <p>Comprehensive solutions for all your truck maintenance and repair needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #f39c12; position:relative;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%); box-shadow: 0 8px 24px rgba(243,156,18,0.15); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Engine Rebuilds</h3>
+                        <p>Complete engine overhauls and rebuilds for Volvo and other heavy-duty trucks. Expert diagnostics and precision repairs to restore peak performance.</p>
+                        <img src="https://z-p3-scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/62063157_426985674699522_1937148417931214848_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeGpkt499NTELloTstB1FcalxhmGalszXqvGGYZqWzNeqxgXsggLooeMzOTKUZ4qqwq7pqwsKNf4dR-iLoVOtt_3&_nc_ohc=l3Zt_eqeDPwQ7kNvwEDf956&_nc_oc=AdnWV3pl0Nwq-IsAEFHjElJtfSib2jrJwtSQrtDYfNs3uW35idn0ls5UI6Swq8_Tbqo&_nc_zt=23&_nc_ht=z-p3-scontent.fjnb11-1.fna&_nc_gid=n9iSZNi6fJ5eRnvWWP2nUg&oh=00_AfN4oLnGyAxbluOTiGj9F3hJTh212sLabRRkjiGgp-xXcA&oe=687BB5C7" alt="Engine Rebuilds" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                    <span class="animate-pop" style="position:absolute;top:20px;right:20px;background:#fff3e0;color:#f39c12;padding:4px 12px;border-radius:12px;font-size:0.85rem;font-weight:600;box-shadow:0 1px 4px rgba(243,156,18,0.08);">Popular</span>
+                </div>
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #1a3a6c; position:relative;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #1a3a6c 0%, #95a5a6 100%); box-shadow: 0 8px 24px rgba(26,58,108,0.12); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Gearbox Repairs</h3>
+                        <p>Specialized gearbox repairs and rebuilds. We handle manual, automatic, and automated manual transmissions for optimal shifting performance.</p>
+                        <img src="https://ik.imagekit.io/rdq6fxdrh/Saved%20Pictures/WhatsApp%20Image%202025-06-17%20at%2010.59.24_0fee3afe.jpg?updatedAt=1750329128288" alt="Gearbox Repairs" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                    <span class="animate-pop" style="position:absolute;top:20px;right:20px;background:#e3eafc;color:#1a3a6c;padding:4px 12px;border-radius:12px;font-size:0.85rem;font-weight:600;box-shadow:0 1px 4px rgba(26,58,108,0.08);">Expertise</span>
+                </div>
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #e74c3c; position:relative;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #e74c3c 0%, #f39c12 100%); box-shadow: 0 8px 24px rgba(231,76,60,0.13); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Advanced Diagnostics</h3>
+                        <p>State-of-the-art diagnostic services to identify complex electrical and mechanical issues quickly and accurately.</p>
+                        <img src="https://cdn.prod.website-files.com/654a8cdb903836749feb9ec7/6564fc1f19eb8a3950c99b55_Diagnostics.webp" alt="Advanced Diagnostics" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                    <span class="animate-pop" style="position:absolute;top:20px;right:20px;background:#fdecea;color:#e74c3c;padding:4px 12px;border-radius:12px;font-size:0.85rem;font-weight:600;box-shadow:0 1px 4px rgba(231,76,60,0.08);">Hi-Tech</span>
+                </div>
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #2c3e50; position:relative;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #2c3e50 0%, #95a5a6 100%); box-shadow: 0 8px 24px rgba(44,62,80,0.12); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Differential Rebuilds</h3>
+                        <p>Expert differential repairs and rebuilds to ensure proper power distribution and smooth operation for all driving conditions.</p>
+                        <img src="https://i.ebayimg.com/images/g/L~QAAOSwIydixFuo/s-l1600.jpg" alt="Differential Rebuilds" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                    <span class="animate-pop" style="position:absolute;top:20px;right:20px;background:#e0e4e8;color:#2c3e50;padding:4px 12px;border-radius:12px;font-size:0.85rem;font-weight:600;box-shadow:0 1px 4px rgba(44,62,80,0.08);">Precision</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parts & Spares Section -->
+    <section class="services" id="parts-spares" style="background:#f7f9fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Parts & Spares</h2>
+                <p>Quality genuine and aftermarket parts for Volvo and other heavy-duty trucks</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #f39c12;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Engine Parts</h3>
+                        <p>Supplying pistons, rings, gaskets, injectors, filters, and more for all major truck engines.</p>
+                        <img src="https://i.pinimg.com/736x/90/be/15/90be15c6e26bd6a7311ee860a1013f0a.jpg" alt="Engine Parts" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                </div>
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #1a3a6c;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #1a3a6c 0%, #95a5a6 100%); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Gearbox & Drivetrain</h3>
+                        <p>Clutches, bearings, seals, synchronizers, and complete gearbox kits available for fast repairs.</p>
+                        <img src="https://z-p3-scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/61986811_426988071365949_7688262510931083264_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeEWHfxXSD_SHFxoI8l17iPOL1fvEmbNx2gvV-8SZs3HaJjdiw_jM4CeHRx-7NtAH8MgHAz7rjWlLzoPHcVGdHJi&_nc_ohc=BSZ_vUIyBtgQ7kNvwGzc5HI&_nc_oc=AdneB-bu0hZBVDmqSOz7kGVVbRgAqjHoI4aP7azMv4UHTuqRtdeabFNOgu9PbOwdNHc&_nc_zt=23&_nc_ht=z-p3-scontent.fjnb11-1.fna&_nc_gid=zTgiLh7Ov7R43OzfDTvwfA&oh=00_AfPAKNY5mpIIMYLTtIEDHjfe2RIo0-znx_17qB-Jka2SHw&oe=687BC1DA" alt="Gearbox & Drivetrain" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                </div>
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #e74c3c;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #e74c3c 0%, #f39c12 100%); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Suspension & Brakes</h3>
+                        <p>Airbags, shock absorbers, brake pads, discs, and all suspension components for safe operation.</p>
+                        <img src="https://z-p3-scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/62205925_426986934699396_6593197845048721408_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeELqapNNPUdIqV8njT3EC1NCoj_Sw2GwPMKiP9LDYbA87KoXykp2QQCxXY4TBNSCro1MH3MPQa0mHwzISDwhf4Q&_nc_ohc=gTfcgmUaUwEQ7kNvwG_wiCh&_nc_oc=AdnGWofs0Qjo7LwmtzZ4EXOYAz79XGbSHZcpEh9GF8AV56HUbfZjRZefAX2d5iKpVlU&_nc_zt=23&_nc_ht=z-p3-scontent.fjnb11-1.fna&_nc_gid=fA3Fwm_zJgCOOnStULtHKA&oh=00_AfM1K2aB9NRCwfDR0nX77WY5lBFs8qakKypLrLMR-uWWUA&oe=687BB5C3" alt="Suspension & Brakes" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                </div>
+                <div class="service-card animate-fade-in" style="border-top: 6px solid #2c3e50;">
+                    <div class="service-icon animate-bounce" style="background: linear-gradient(135deg, #2c3e50 0%, #95a5a6 100%); border-radius: 0 0 50% 50%;">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Electrical & Sensors</h3>
+                        <p>Batteries, alternators, starters, sensors, and wiring harnesses for reliable truck electronics.</p>
+                        <img src="https://z-p3-scontent.fjnb11-1.fna.fbcdn.net/v/t1.6435-9/62507820_426989828032440_4580013653981396992_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeEe17MvHo6RxeBLpqZUhhzcCtk33le59xkK2TfeV7n3GVxgCM7YO7aCUZo7zVOgvljRD3K2HFto-PwRM45eGG84&_nc_ohc=vPLHazAkv98Q7kNvwEpczJA&_nc_oc=Adkg81aJ8qTThULcjBTr1ILKVzR5HJvtyNIuMvbQcn0RSkiVNqA6T9TYpKIVt7pO1XU&_nc_zt=23&_nc_ht=z-p3-scontent.fjnb11-1.fna&_nc_gid=k8l5U60kQOs2dqEzxqhUPQ&oh=00_AfPNnO4JVOS6qphTyADFF5dsKwliyETN3bB8EWrwhBx3oA&oe=687BB4C3" alt="Electrical & Sensors" style="width:100%;border-radius:8px;margin-top:15px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px;">
+                <a href="tel:+2764471442" class="btn btn-secondary btn-large">Order Parts & Spares</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about animate-fade-in-left" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://ik.imagekit.io/rdq6fxdrh/Saved%20Pictures/WhatsApp%20Image%202025-06-17%20at%2010.59.25_bcc142c2.jpg?updatedAt=1750329146248" alt="Truck Mechanic">
+                </div>
+                <div class="about-content">
+                    <h2>About Samtec Mobile Truck Clinic</h2>
+                    <p>With over 15 years of specialized experience in heavy vehicle maintenance, Samtec Mobile Truck Clinic has established itself as a leader in Volvo truck repairs and comprehensive truck servicing.</p>
+                    <p>Our mobile service approach means we bring the workshop to you, minimizing downtime and maximizing convenience for fleet managers and owner-operators alike.</p>
+                    <p>We pride ourselves on using only genuine parts and the latest diagnostic equipment to ensure your truck receives the best possible care.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>200+</h3>
+                            <p>Trucks Serviced</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>98%</h3>
+                            <p>Customer Satisfaction</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>24/7</h3>
+                            <p>Emergency Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta animate-fade-in-up" id="cta">
+        <div class="container">
+            <h2>Need Expert Truck Repair Services?</h2>
+            <p>Don't let truck downtime hurt your business. Contact us today for reliable, professional mobile repair services you can count on.</p>
+            <a href="tel:+2764471442" class="btn btn-large btn-secondary">Call Now: 064 471 442</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Samtec Mobile Truck Clinic</h3>
+                    <p>Providing expert mobile repair services for Volvo and other heavy-duty trucks throughout the region.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Engine Rebuilds</a></li>
+                        <li><a href="services.html">Gearbox Repairs</a></li>
+                        <li><a href="services.html">Diagnostics</a></li>
+                        <li><a href="services.html">Differential Rebuilds</a></li>
+                        <li><a href="services.html">Preventive Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>Phone: <a href="tel:+2764471442">064 471 442</a></div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>Email: <a href="mailto:sammusarurwa239@gmail.com">sammusarurwa239@gmail.com</a></div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>Mobile Service Area: Gauteng & Surrounding Regions</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>Hours: Mon-Fri 8AM-6PM, Sat 9AM-1PM, Emergency 24/7</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="copyrightYear"></span> Samtec Mobile Truck Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navMenu.classList.remove('show');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('show');
+                }
+            });
+        });
+        
+        // Header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            }
+        });
+        
+        // Set current year in copyright
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+        // Animate sections on scroll
+        function animateSectionsOnScroll() {
+            const sections = [
+                { selector: '.about.animate-fade-in-left', className: 'animate-fade-in-left' },
+                { selector: '.cta.animate-fade-in-up', className: 'animate-fade-in-up' }
+            ];
+            sections.forEach(section => {
+                const el = document.querySelector(section.selector);
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.92) {
+                        el.style.opacity = 1;
+                        el.style.animationPlayState = 'running';
+                    }
+                }
+            });
+        }
+        window.addEventListener('scroll', animateSectionsOnScroll);
+        window.addEventListener('DOMContentLoaded', () => {
+            // Trigger initial animation for hero
+            document.querySelector('.hero.animate-fade-in-up').style.opacity = 1;
+            document.querySelector('.hero.animate-fade-in-up').style.animationPlayState = 'running';
+            animateSectionsOnScroll();
+        });
+    </script>
+</body>
+</html>
